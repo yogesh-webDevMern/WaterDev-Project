@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("hidden");
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <img src="./images/logo.jpg" alt="Logo" class="w-[100px]">
+        </div>
+        <ul class="hidden md:flex space-x-6 text-gray-700">
+            <li><a href="#" class="hover:text-red-500">HOME</a></li>
+            <li><a href="#" class="hover:text-red-500">ABOUT US</a></li>
+            <li><a href="#" class="hover:text-red-500">PRODUCTS</a></li>
+            <li><a href="#" class="hover:text-red-500">PROJECTS</a></li>
+            <li><a href="#" class="hover:text-red-500">CONTACT US</a></li>
+        </ul>
+        <button class="hidden md:block border border-red-500 text-red-500 px-4 py-2 rounded-full hover:bg-red-500 hover:text-white transition">Get a Quote</button>
+        <button class="md:hidden p-2 text-[20px] rounded" onclick="toggleMenu()">☰</button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="md:hidden bg-white p-4 space-y-2 hidden" id="mobile-menu">
+        <a href="#" class="block text-gray-700 hover:text-red-500">HOME</a>
+        <a href="#" class="block text-gray-700 hover:text-red-500">ABOUT US</a>
+        <a href="#" class="block text-gray-700 hover:text-red-500">PRODUCTS</a>
+        <a href="#" class="block text-gray-700 hover:text-red-500">PROJECTS</a>
+        <a href="#" class="block text-gray-700 hover:text-red-500">CONTACT US</a>
+        <button class="w-full border border-red-500 text-red-500 px-4 py-2 rounded-full hover:bg-red-500 hover:text-white transition">Get a Quote</button>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen w-full">
+        <img src="./images/bannerIMage.avif" alt="Hero Image" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center px-6 md:px-20">
+            <h1 class="text-white text-3xl md:text-6xl font-bold max-w-xl">Building the future with strength, one pipeline at a time.</h1>
+            <button class="mt-6 bg-red-500 text-white px-6 py-3 rounded-md hover:bg-red-600 transition">CONTACT US</button>
+        </div>
+    </header>
+    <section id="about" class="py-16 px-6 md:px-20 bg-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+            <img src="./images/about.avif" alt="About Us" class="w-full md:w-1/2 rounded-lg shadow-lg">
+            <div class="w-full md:w-1/2">
+                <h2 class="text-red-500 text-lg font-semibold uppercase">Rudhra</h2>
+                <h1 class="text-4xl font-bold mb-4">About us</h1>
+                <p class="text-gray-700 mb-4">At Rudhra, we specialize in high-quality water development solutions, including durable tank construction for residential, commercial, and industrial use. With years of expertise in the industry, we have been committed to providing reliable and efficient water storage solutions tailored to meet the specific needs of our clients. Our focus on quality craftsmanship, advanced technology, and sustainable practices ensures that every project we undertake stands the test of time.</p>
+                <p class="text-gray-700">We take pride in our ability to deliver customized water storage solutions that are both functional and long-lasting. Whether you need a new water tank, maintenance services, or expert consultation, Rudhra is your trusted partner. Our dedicated team ensures that every project is completed with precision, offering superior durability and efficiency. Choose Rudhra for expert water development solutions that guarantee a sustainable and secure water supply for years to come. 💧</p>
+            </div>
+        </div>
+    </section>
+     <!-- Our Products Section -->
+     <section id="products" class="py-16 bg-gray-900 text-white px-6 md:px-20">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-center text-red-500 text-lg font-semibold">OUR PRODUCTS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+                <div class="p-6 border border-gray-700 rounded-lg bg-gray-800">
+                    <h3 class="text-xl font-bold">Pre-stressed Concrete (PSC) Pipes</h3>
+                    <p class="mt-2 text-gray-300">Compact concrete core pipe longitudinally prestressed with pre-tensioned high tensile steel wire embedded in the concrete.</p>
+                    <a href="#" class="text-red-400 mt-4 inline-block">Learn More →</a>
+                </div>
+                <div class="p-6 border border-gray-700 rounded-lg bg-gray-800">
+                    <h3 class="text-xl font-bold">Pre-stressed Concrete Cylindrical (PCC) Pipes</h3>
+                    <p class="mt-2 text-gray-300">A welded sheet steel cylinder with steel socket and spigot rings welded to its ends, lined with concrete.</p>
+                    <a href="#" class="text-red-400 mt-4 inline-block">Learn More →</a>
+                </div>
+                <div class="p-6 border border-gray-700 rounded-lg bg-gray-800">
+                    <h3 class="text-xl font-bold">Bar Wrapped Steel Cylindrical (BWSC) Pipes</h3>
+                    <p class="mt-2 text-gray-300">A thin steel sheet cylinder welded with thicker steel socket and spigot rings for jointing the pipe with rubber rings.</p>
+                    <a href="#" class="text-red-400 mt-4 inline-block">Learn More →</a>
+                </div>
+                <div class="p-6 border border-gray-700 rounded-lg bg-gray-800">
+                    <h3 class="text-xl font-bold">Mild Steel (MS) Pipes</h3>
+                    <p class="mt-2 text-gray-300">Mild Steel (MS) pipes are manufactured using low carbon steel (less than 0.25%).</p>
+                    <a href="#" class="text-red-400 mt-4 inline-block">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="relative bg-cover bg-center bg-fixed text-white py-32 px-6 md:px-20" style="background-image: url('./images/outPojectSec.avif');">
+        <div class="max-w-4xl mx-auto text-center bg-black bg-opacity-50 p-10 rounded-lg">
+            <h2 class="text-red-500 text-lg font-semibold">OUR PROJECTS</h2>
+            <h1 class="text-4xl font-bold my-4">Innovative & Reliable Infrastructure</h1>
+            <p class="text-gray-300">At Rudhra, we have successfully completed numerous water development projects, delivering high-quality and long-lasting water storage solutions. Our expertise in tank construction has helped industries, communities, and businesses ensure a reliable water supply. Each project we undertake is built with precision, using the best materials and modern techniques to guarantee durability and efficiency.
+
+                From large-scale industrial water tanks to customized storage solutions for residential and commercial use, our projects reflect our commitment to quality and sustainability. With years of experience, we continue to innovate and provide top-tier water development services, ensuring that every client receives the best solutions tailored to their specific needs. </p>
+            <button class="mt-6 bg-red-500 text-white px-6 py-3 rounded-md hover:bg-red-600 transition">Explore More</button>
+        </div>
+    </section>
+
+    <section id="why-choose-us" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-6 lg:flex lg:items-center">
+            <div class="lg:w-1/2 bg-black text-white p-8 rounded-lg shadow-lg">
+                <ul class="space-y-6">
+                    <li class="flex items-center">
+                        <span class="bg-red-500 text-white p-3 rounded-full mr-4">⚙</span>
+                        <span>Turnkey project responsibility</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="bg-red-500 text-white p-3 rounded-full mr-4">⚙</span>
+                        <span>Agile and Devoted Staff</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="bg-red-500 text-white p-3 rounded-full mr-4">⚙</span>
+                        <span>Collaborative Work Force</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="bg-red-500 text-white p-3 rounded-full mr-4">⚙</span>
+                        <span>Hallmark Quality</span>
+                    </li>
+                    <li class="flex items-center">
+                        <span class="bg-red-500 text-white p-3 rounded-full mr-4">⚙</span>
+                        <span>Compact association with industry affiliates</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="lg:w-1/2 lg:pl-12 mt-8 lg:mt-0 text-gray-700">
+                <h2 class="text-red-500 text-lg font-semibold">WHY CHOOSE US</h2>
+                <h1 class="text-3xl font-bold mt-2">Quality & Excellence in Every Project</h1>
+                <p class="mt-4">We, Rudra & Company Construction Limited (KCCL), established in 1979, are one of the leading EPC players in the Indian sub-continent with quality experience in executing turnkey Irrigation and Water Supply Infrastructure Projects across India.</p>
+                <button class="mt-6 bg-red-500 text-white px-6 py-3 rounded-md hover:bg-red-600 transition">Learn More</button>
+            </div>
+        </div>
+    </section>
+     <!-- Footer Section -->
+     <footer class="bg-gray-900 text-gray-300 py-10">
+        <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-between">
+            <div class="w-full  md:w-1/3 mb-6 md:mb-0">
+                <img src="./images/logo.jpg" alt="Logo" class="h-[70px] mx-auto md:mx-[10px] rounded-full md:rounded mb-4">
+                <p class="text-sm">Rudra  established in 1979, is one of the leading EPC players in the Indian subcontinent.</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+                    <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                <h3 class="text-white text-lg font-semibold mb-4">Explore</h3>
+                <ul>
+                    <li><a href="#" class="hover:text-red-500">Home</a></li>
+                    <li><a href="#about" class="hover:text-red-500">About Us</a></li>
+                    <li><a href="#products" class="hover:text-red-500">Products</a></li>
+                    <li><a href="#projects" class="hover:text-red-500">Projects</a></li>
+                    <li><a href="#" class="hover:text-red-500">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
